@@ -37,7 +37,7 @@ class S3LineReader {
       return this.next();
     // And if the line break happens to be at the beginning of the string, chop it off and reprocess
     } else if (indexOfLineBreak === 0) {
-      this.dataToProcess = this.dataToProcess.slice(indexOfLineBreak + 1);
+      this.dataToProcess = this.dataToProcess.slice(1);
       return this.next();
     }
 
